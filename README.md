@@ -11,7 +11,7 @@
 7. [API Endpoints](#API-Endpoints)
 
 
-## Team ENTS-H1137 - CC
+## Team C242-PS448 - CC
 
 | Bangkit ID | Name | Learning Path | University |LinkedIn |
 | ---      | ---       | ---       | ---       | ---       |
