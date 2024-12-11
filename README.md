@@ -6,7 +6,7 @@
 2. [What is REPLASTE?](#REPLASTE)
 3. [Technology](#Technology)
 4. [Deployment](#Deployment)
-5. [API Endpoints](#API-Endpoints)
+5. [Test API Endpoints](#Test-API-Endpoints)
 
 
 ## Team C242-PS448 - CC
@@ -134,7 +134,7 @@ GOOGLE_CLOUD_KEYFILE=./key.json" \
 --timeout=300
 ```
 
-### 8. Test Using Postman
+## Test API Endpoints Using Postman
 Login, Register, Reset Password:
 
 - POST: https://replaste-1036434457572.asia-southeast2.run.app/login
@@ -234,9 +234,3 @@ Body (raw JSON):
     - gmapsLink: "https://goo.gl/maps/xxxxx"
     - image: [file]
 - DELETE: https://replaste-1036434457572.asia-southeast2.run.app/deleteLokasi/:id
-
-## API Endpoints
-
-Here are the available API endpoints for the REPLASTE project:
-
-
