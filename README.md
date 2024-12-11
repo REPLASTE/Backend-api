@@ -138,8 +138,7 @@ GOOGLE_CLOUD_KEYFILE=./key.json" \
 Login, Register, Reset Password:
 
 - POST: https://replaste-1036434457572.asia-southeast2.run.app/login
-
--- Body (raw):
+Body (raw):
 ```
 {
   "email": "masbro.am88@gmail.com",
@@ -148,7 +147,7 @@ Login, Register, Reset Password:
 ```
 
 - POST: https://replaste-1036434457572.asia-southeast2.run.app/register
--- Body (raw):
+Body (raw):
 ```
 {
   "email": "masbro.am88@gmail.com",
@@ -158,40 +157,40 @@ Login, Register, Reset Password:
 ```
 
 -POST: https://replaste-1036434457572.asia-southeast2.run.app/request-reset
--- Body (raw):
+Body (raw):
 ```
 {
   "email": "masbro.am88@gmail.com"
 }
 ```
-POST: https://replaste-1036434457572.asia-southeast2.run.app/reset/{token}
 
+- POST: https://replaste-1036434457572.asia-southeast2.run.app/reset/{token}
 Body (raw):
-json
-Copy code
+```
 {
   "password": "123"
 }
-Call Prediction Results:
+```
 
-GET: https://replaste-1036434457572.asia-southeast2.run.app/predictions/1
-Classify Plastic Type:
+#### Call Prediction Results:
+- GET: https://replaste-1036434457572.asia-southeast2.run.app/predictions/1
 
-POST: https://plastic-classifier-1036434457572.asia-southeast2.run.app/predict
+#### Classify Plastic Type:
+- POST: https://plastic-classifier-1036434457572.asia-southeast2.run.app/predict
 Body (form-data):
-file: image
-user_id: user_id
-Save and Retrieve Plastic Types:
+  - file: image
+  - user_id: user_id
 
-GET: https://replaste-1036434457572.asia-southeast2.run.app/getAllPlastik
+#### Save and Retrieve Plastic Types:
 
-GET: https://replaste-1036434457572.asia-southeast2.run.app/getPlastik/:id
+- GET: https://replaste-1036434457572.asia-southeast2.run.app/getAllPlastik
 
-POST: https://replaste-1036434457572.asia-southeast2.run.app/createJenisPlastik
+- GET: https://replaste-1036434457572.asia-southeast2.run.app/getPlastik/:id
+
+- POST: https://replaste-1036434457572.asia-southeast2.run.app/createJenisPlastik
 
 Body (raw JSON):
-json
-Copy code
+```
 {
   "nama": "PET (Polyethylene Terephthalate)",
   "kode": "1",
@@ -200,11 +199,11 @@ Copy code
   "produk_penggunaan": "Mineral water bottles, soda bottles, cooking oil containers, chili sauce containers, jam containers, microwaveable packaging",
   "environmental_impact": "It can pollute the soil and water, potentially generating harmful microplastics for marine ecosystems. If burned, it can produce toxic gases."
 }
-PUT: https://replaste-1036434457572.asia-southeast2.run.app/updateJenisPlastik/:id
+```
 
+- PUT: https://replaste-1036434457572.asia-southeast2.run.app/updateJenisPlastik/:id
 Body (raw JSON):
-json
-Copy code
+```
 {
   "nama": "PET (Polyethylene Terephthalate)",
   "kode": "1",
@@ -213,31 +212,28 @@ Copy code
   "produk_penggunaan": "Mineral water bottles, soda bottles, cooking oil containers, chili sauce containers, jam containers, microwaveable packaging",
   "environmental_impact": "It can pollute the soil and water, potentially generating harmful microplastics for marine ecosystems. If burned, it can produce toxic gases."
 }
-DELETE: https://replaste-1036434457572.asia-southeast2.run.app/deleteJenisPlastik/:id
+```
 
-Save and Retrieve Recycling Locations:
+- DELETE: https://replaste-1036434457572.asia-southeast2.run.app/deleteJenisPlastik/:id
 
-GET: https://replaste-1036434457572.asia-southeast2.run.app/getAllLokasi
-
-GET: https://replaste-1036434457572.asia-southeast2.run.app/getAllLokasi/:id
-
-POST: https://replaste-1036434457572.asia-southeast2.run.app/createLokasi
-
-Body (form-data):
-name: "Recycling Center Sejahtera"
-address: "Jl. Raya No. 123, Jakarta"
-phoneNumber: "081234567890"
-gmapsLink: "https://goo.gl/maps/xxxxx"
-image: [file]
-PUT: https://replaste-1036434457572.asia-southeast2.run.app/updateLokasi/:id
-
-Body (form-data):
-name: "Recycling Center Sejahtera"
-address: "Jl. Raya No. 123, Jakarta"
-phoneNumber: "081234567890"
-gmapsLink: "https://goo.gl/maps/xxxxx"
-image: [file]
-DELETE: https://replaste-1036434457572.asia-southeast2.run.app/deleteLokasi/:id
+#### Save and Retrieve Recycling Locations:
+- GET: https://replaste-1036434457572.asia-southeast2.run.app/getAllLokasi
+- GET: https://replaste-1036434457572.asia-southeast2.run.app/getAllLokasi/:id
+- POST: https://replaste-1036434457572.asia-southeast2.run.app/createLokasi
+  - Body (form-data):
+    - name: "Recycling Center Sejahtera"
+    - address: "Jl. Raya No. 123, Jakarta"
+    - phoneNumber: "081234567890"
+    - gmapsLink: "https://goo.gl/maps/xxxxx"
+    - image: [file]
+- PUT: https://replaste-1036434457572.asia-southeast2.run.app/updateLokasi/:id
+  - Body (form-data):
+    - name: "Recycling Center Sejahtera"
+    - address: "Jl. Raya No. 123, Jakarta"
+    - phoneNumber: "081234567890"
+    - gmapsLink: "https://goo.gl/maps/xxxxx"
+    - image: [file]
+- DELETE: https://replaste-1036434457572.asia-southeast2.run.app/deleteLokasi/:id
 
 ## API Endpoints
 
