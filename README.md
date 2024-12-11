@@ -6,7 +6,7 @@
 2. [What is REPLASTE?](#REPLASTE)
 3. [Technology](#Technology)
 4. [Deployment](#Deployment)
-5. [Test API Endpoints](#Test-API-Endpoints)
+5. [Test API Endpoints Using Postman](#Test-API-Endpoints)
 
 
 ## Team C242-PS448 - CC
